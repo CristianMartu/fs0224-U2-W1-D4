@@ -52,5 +52,14 @@
         <p>Testarli</p>
       </div>
     </main>
+    <script>
+      const postIt = document.querySelectorAll('main div')
+      for (let i = 0; i < postIt.length; i++) {
+        setTimeout(() => {
+          postIt[i].style.display = 'block'
+          postIt[i].style.animation = 'myAnimation 900ms'
+        }, i * 300)
+      }
+    </script>
   </body>
 </html>
